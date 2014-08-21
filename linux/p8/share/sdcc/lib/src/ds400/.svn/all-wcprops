@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/ds400
+END
+tinibios.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/ds400/tinibios.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/sdcc/code/!svn/ver/7289/trunk/sdcc/device/lib/ds400/Makefile.in
+END
+memcpyx.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/ds400/memcpyx.c
+END
+ds400rom.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/ds400/ds400rom.c
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/p/sdcc/code/!svn/ver/8030/trunk/sdcc/device/lib/hc08
+END
+_divulong.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/hc08/_divulong.c
+END
+_mulint.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/hc08/_mulint.c
+END
+_ret.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/p/sdcc/code/!svn/ver/7526/trunk/sdcc/device/lib/hc08/_ret.c
+END
+_mullong.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/hc08/_mullong.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/sdcc/code/!svn/ver/8030/trunk/sdcc/device/lib/hc08/Makefile.in
+END
+_divuint.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/hc08/_divuint.c
+END

@@ -1,0 +1,108 @@
+.TH GPLINK 1 "4 mars 2012" "gputils-1.2.0" "Manuel de l'utilisateur Linux"
+.SH NOM
+gplink \- Éditeur de liens GNU pour PIC
+.SH SYNOPSIS
+.B gplink [options] [objets] [bibliothèques]
+.SH AVERTISSEMENT
+Les informations de cette page de manuel sont extraites de la documentation 
+complète de gputils et sont limitées à la signification des options. Pour une 
+documentation complète, reportez-vous au fichier «\ gputils.ps\ » (en anglais) 
+situé dans le répertoire doc de gputils.
+.SH DESCRIPTION
+.B gplink
+conbine un nombre de fichiers objets et archives, reloge leurs données, et lie
+leurs références symboles. Il produit en sortie un exécutable pour les
+microcontrôleurs PIC (TM) de Microchip (TM).
+.B gplink
+est une partie de gputils. Consultez la page manuel
+.BR gputils (1)
+pour avoir des détails sur les autres utilitaires GNU PIC.
+.SH OPTIONS
+.TP
+.BR "\-a FMT" , " \-\-hex\-format FMT
+gplink reconnaît les formats de fichiers hexadécimaux inhx8m, inhx8s, inhx16,
+et inhx32. Cette option contrôle quel format de fichier hexadécimal est
+utilisé. La valeur par défaut est inhx32.
+.TP
+.BR \-c ", "\-\-object
+Produire en sortie un objet exécutable.
+.TP
+.BR \-d ", "\-\-debug
+Produire des messages de débogage.
+.TP
+.BR "\-f VALEUR" , " \--fill VALEUR
+Remplir la mémoire programme inutilisée et non protégée avec VALEUR. VALEUR 
+supplante la valeur de remplissage du script éditeur de liens. VALEUR ne doit
+pas être supérieure à 0xffff. VALEUR est en hexadécimal et doit être précédée
+par «\ 0x\ ».
+.TP
+.BR \-h ", "\-\-help
+Afficher un message d'utilisation et quitter.
+.TP
+.BR "\-I RÉP" , " \-\-include RÉP
+Spécifier le répertoire d'inclusion d'en-têtes.
+.TP
+.BR \-l ", "\-\-no\-list
+Ne pas produire en sortie le fichier listing.
+.TP
+.BR \-m ", "\-\-map
+Produire en sortie un fichier d'équivalence.
+.TP
+.BR "\-\-mplink\-compatible"
+Cette option définit le mode de compatibilité MPLINK.
+.TP
+.BR "\-o FICHIER" , " \-\-output FICHIER
+Nom alternatif du fichier de sortie.
+.TP
+.BR "\-O OPT" , " \-\-optimize OPT
+Niveau d'optimization. La valeur par défaut est 1.
+.TP
+.BR \-q ", "\-\-quiet
+Supprimer tout ce qui est envoyé sur la sortie standard.
+.TP
+.BR \-r ", "\-\-use\-shared
+Essayer de reloger des sections de données non partagées vers la mémoire
+partagée si la translation échoue.
+.TP
+.BR "\-s FICHIER" , " \-\-script FICHIER
+Choisir le script éditeur de lien.
+.TP
+.BR "\-t SIZE" , " \-\-stack SIZE
+Créer une section de pile.
+.TP
+.BR "\-u" , " \-\-macro symbol=[value]
+Ajouter une valeur de macro pour le script.
+.TP
+.BR \-v ", "\-\-version
+Afficher les informations de version et quitter.
+.SH VOIR AUSSI
+.BR gputils (1)
+.SH AUTEUR
+Craig Franklin <craigfranklin@users.sourceforge.net>
+.SH TRADUCTION
+.PP
+Ce document est une traduction réalisée par Alain Portal
+<alain DOT portal AT univ-montp2 DOT fr> le 14\ octobre\ 2004
+et révisée le 4\ mars\ 2012.
+.PP
+L'équipe de traduction a fait le maximum pour réaliser une adaptation
+française de qualité. La version anglaise la plus à jour de ce document est
+toujours consultable via la commande\ : «\ \fBLANG=C\ man\ 1\ gplink\fR\ ».
+N'hésitez pas à signaler à l'auteur ou au traducteur, selon le cas, toute
+erreur dans cette page de manuel.
+.SH COPYRIGHT
+Copyright (C) 2002, 2003, 2004, 2005 Craig Franklin
+
+Ce programme est un logiciel libre\ ; vous pouvez le redistribuer et/ou le
+modifier sous les termes de la licence GNU GPL telle que publiée par la Free
+Software Foundation\ ; soit la version 2, soit (à votre convenance) toute
+version ultérieure.
+
+Ce programme est distribué dans l'espoir qu'il soit utile, mais
+SANS AUCUNE GARANTIE\ ; même sans la garantie implicite d'UTILISABILITÉ
+ou d'ADAPTATION À UN USAGE PRÉCIS. Lisez la licence GNU GPL pour plus
+de détails.
+
+Vous devriez avoir reçu une copie de la licence GNU GPL avec ce programme\ ;
+si ce n'est pas le cas, écrivez à Free Software Foundation, Inc., 675 Mass Ave,
+Cambridge, MA 02139, USA.

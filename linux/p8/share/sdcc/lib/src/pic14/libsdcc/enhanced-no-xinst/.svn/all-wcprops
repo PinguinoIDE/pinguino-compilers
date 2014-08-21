@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/sdcc/code/!svn/ver/8895/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst
+END
+macros.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/macros.inc
+END
+_gptrget1.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/_gptrget1.S
+END
+_gptrget2.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/_gptrget2.S
+END
+_gptrget3.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/_gptrget3.S
+END
+_gptrget4.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/_gptrget4.S
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8895/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/Makefile.in
+END
+_gptrput1.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/_gptrput1.S
+END
+_gptrput2.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/_gptrput2.S
+END
+_gptrput3.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/_gptrput3.S
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/Makefile.am
+END
+_gptrput4.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/sdcc/code/!svn/ver/8694/trunk/sdcc/device/lib/pic14/libsdcc/enhanced-no-xinst/_gptrput4.S
+END

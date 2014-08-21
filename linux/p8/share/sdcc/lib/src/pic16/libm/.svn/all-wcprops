@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm
+END
+sinf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/sinf.c
+END
+sqrtf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/sqrtf.c
+END
+asinf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/asinf.c
+END
+tanhf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/tanhf.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/sdcc/code/!svn/ver/8895/trunk/sdcc/device/lib/pic16/libm/Makefile.in
+END
+expf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/expf.c
+END
+coshf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/coshf.c
+END
+sincosf.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/sincosf.c
+END
+asincosf.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/asincosf.c
+END
+sinhf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/sinhf.c
+END
+atan2f.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/atan2f.c
+END
+powf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/powf.c
+END
+sincoshf.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/sincoshf.c
+END
+fabsf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/fabsf.c
+END
+ceilf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/ceilf.c
+END
+ldexpf.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/ldexpf.c
+END
+errno.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/errno.c
+END
+floorf.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/floorf.c
+END
+logf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/logf.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/sdcc/code/!svn/ver/5210/trunk/sdcc/device/lib/pic16/libm/Makefile.am
+END
+log10f.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/log10f.c
+END
+tanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/tanf.c
+END
+atanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/atanf.c
+END
+frexpf.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/frexpf.c
+END
+cosf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/cosf.c
+END
+cotf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/cotf.c
+END
+acosf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/acosf.c
+END
+modff.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/modff.c
+END
+tancotf.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/sdcc/code/!svn/ver/8926/trunk/sdcc/device/lib/pic16/libm/tancotf.c
+END

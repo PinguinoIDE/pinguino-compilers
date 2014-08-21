@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/sdcc/code/!svn/ver/7609/trunk/sdcc/device/lib/pic16/libc/stdio
+END
+strmputchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/strmputchar.c
+END
+streams.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/streams.c
+END
+vfprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/vfprintf.c
+END
+printf.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/printf.c
+END
+strmusart.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/strmusart.c
+END
+printf_tiny.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/printf_tiny.c
+END
+sprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/sprintf.c
+END
+strmgpsim.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/strmgpsim.c
+END
+putchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/putchar.c
+END
+fprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/fprintf.c
+END
+strmmssp.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/sdcc/code/!svn/ver/7609/trunk/sdcc/device/lib/pic16/libc/stdio/strmmssp.c
+END
+vprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/vprintf.c
+END
+printf_small.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/printf_small.c
+END
+vsprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/stdio/vsprintf.c
+END

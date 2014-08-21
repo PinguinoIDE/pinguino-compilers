@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/sdcc/code/!svn/ver/8895/trunk/sdcc/device/lib/pic16/startup
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/5210/trunk/sdcc/device/lib/pic16/startup/Makefile.am
+END
+crt0.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/startup/crt0.c
+END
+crt0iz.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/sdcc/code/!svn/ver/8191/trunk/sdcc/device/lib/pic16/startup/crt0iz.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/sdcc/code/!svn/ver/3341/trunk/sdcc/device/lib/pic16/startup/README
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/8895/trunk/sdcc/device/lib/pic16/startup/Makefile.in
+END
+crt0i.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/8191/trunk/sdcc/device/lib/pic16/startup/crt0i.c
+END

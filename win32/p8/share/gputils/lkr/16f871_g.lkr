@@ -1,0 +1,62 @@
+// File: 16f871_g.lkr
+// Generic linker script for the PIC16F871 processor
+
+#DEFINE _CODEEND _DEBUGCODESTART - 1
+#DEFINE _CEND _CODEEND + _DEBUGCODELEN
+#DEFINE _DATAEND _DEBUGDATASTART - 1
+#DEFINE _DEND _DATAEND + _DEBUGDATALEN
+
+LIBPATH .
+
+
+#IFDEF _DEBUGCODESTART
+  CODEPAGE   NAME=page0      START=0x0               END=_CODEEND
+  CODEPAGE   NAME=debug      START=_DEBUGCODESTART   END=_CEND        PROTECTED
+#ELSE
+  CODEPAGE   NAME=page0      START=0x0               END=0x7FF                    
+#FI
+
+CODEPAGE   NAME=.idlocs    START=0x2000            END=0x2003         PROTECTED 
+CODEPAGE   NAME=devid      START=0x2006            END=0x2006         PROTECTED 
+CODEPAGE   NAME=.config    START=0x2007            END=0x2007         PROTECTED 
+CODEPAGE   NAME=eedata     START=0x2100            END=0x213F         PROTECTED 
+
+DATABANK   NAME=sfr0       START=0x0               END=0x1F           PROTECTED
+DATABANK   NAME=sfr1       START=0x80              END=0x9F           PROTECTED
+DATABANK   NAME=sfr2       START=0x100             END=0x10F          PROTECTED
+DATABANK   NAME=sfr3       START=0x180             END=0x18F          PROTECTED
+
+
+#IFDEF _DEBUGDATASTART
+  SHAREBANK  NAME=dbgnobnk   START=0x20            END=0x20           PROTECTED
+  SHAREBANK  NAME=dbgnobnk   START=0x120           END=0x120          PROTECTED
+  SHAREBANK  NAME=dbgnobnk   START=0x70            END=0x70           PROTECTED
+  SHAREBANK  NAME=dbgnobnk   START=0xF0            END=0xF0           PROTECTED
+  SHAREBANK  NAME=dbgnobnk   START=0x170           END=0x170          PROTECTED
+  SHAREBANK  NAME=dbgnobnk   START=0x1F0           END=0x1F0          PROTECTED
+  SHAREBANK  NAME=dbgnobnk   START=0xA0            END=0xA0           PROTECTED
+  SHAREBANK  NAME=dbgnobnk   START=0x1A0           END=0x1A0          PROTECTED
+
+  SHAREBANK  NAME=gpr0       START=0x21            END=0x6F           
+  SHAREBANK  NAME=gpr0       START=0x121           END=0x16F          PROTECTED
+  SHAREBANK  NAME=gprnobnk   START=0x71            END=0x7F           
+  SHAREBANK  NAME=gprnobnk   START=0xF1            END=0xFF           PROTECTED
+  SHAREBANK  NAME=gprnobnk   START=0x171           END=0x17F          PROTECTED
+  SHAREBANK  NAME=gprnobnk   START=0x1F1           END=0x1FF          PROTECTED
+  SHAREBANK  NAME=gpr1       START=0xA1            END=0xBF           
+  SHAREBANK  NAME=gpr1       START=0x1A1           END=0x1BF          PROTECTED
+#ELSE
+  SHAREBANK  NAME=gpr0       START=0x20            END=0x6F           
+  SHAREBANK  NAME=gpr0       START=0x120           END=0x16F          PROTECTED
+  SHAREBANK  NAME=gprnobnk   START=0x70            END=0x7F           
+  SHAREBANK  NAME=gprnobnk   START=0xF0            END=0xFF           PROTECTED
+  SHAREBANK  NAME=gprnobnk   START=0x170           END=0x17F          PROTECTED
+  SHAREBANK  NAME=gprnobnk   START=0x1F0           END=0x1FF          PROTECTED
+  SHAREBANK  NAME=gpr1       START=0xA0            END=0xBF           
+  SHAREBANK  NAME=gpr1       START=0x1A0           END=0x1BF          PROTECTED
+#FI
+
+SECTION    NAME=PROG1      ROM=page0           // ROM code space - page0
+SECTION    NAME=IDLOCS     ROM=.idlocs         // ID locations
+SECTION    NAME=DEEPROM    ROM=eedata          // Data EEPROM
+
