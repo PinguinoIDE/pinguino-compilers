@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/utils
+END
+cvtdec.S
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/utils/cvtdec.S
+END
+cnvint.S
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/utils/cnvint.S
+END
+cnvfrac.S
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/utils/cnvfrac.S
+END

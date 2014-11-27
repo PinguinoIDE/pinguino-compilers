@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/sdcc/code/!svn/ver/8895/trunk/sdcc/device/lib/pic16/libsdcc
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7609/trunk/sdcc/device/lib/pic16/libsdcc/Makefile.am
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/8895/trunk/sdcc/device/lib/pic16/libsdcc/Makefile.in
+END

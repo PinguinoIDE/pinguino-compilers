@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16
+END
+fps16x162slong.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x162slong.S
+END
+slong2fps16x16.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/slong2fps16x16.S
+END
+fps16x162ulong.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x162ulong.S
+END
+ulong2fps16x16.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/ulong2fps16x16.S
+END
+fps16x16_add.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_add.c
+END
+fps16x16_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_sub.c
+END
+fps16x16_mul.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_mul.c
+END
+fps16x16_gteq.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_gteq.c
+END
+fps16x162schar.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x162schar.S
+END
+schar2fps16x16.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/schar2fps16x16.S
+END
+fps16x16_lteq.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_lteq.c
+END
+fps16x16_eq.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_eq.c
+END
+fps16x162uchar.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x162uchar.S
+END
+uchar2fps16x16.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/uchar2fps16x16.S
+END
+fps16x16_gt.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_gt.c
+END
+fps16x162sfloat.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x162sfloat.c
+END
+fps16x16_lt.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_lt.c
+END
+fps16x162sint.S
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x162sint.S
+END
+sint2fps16x16.S
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/sint2fps16x16.S
+END
+fps16x16_div.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_div.c
+END
+fps16x162uint.S
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x162uint.S
+END
+uint2fps16x16.S
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/uint2fps16x16.S
+END
+fps16x16_neq.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libsdcc/fixed16x16/fps16x16_neq.c
+END

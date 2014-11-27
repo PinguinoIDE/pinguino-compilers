@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/sdcc/code/!svn/ver/8895/trunk/sdcc/device/lib/pic14/libsdcc
+END
+_modsint.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_modsint.c
+END
+uchar2fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/uchar2fs.c
+END
+_moduint.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_moduint.c
+END
+_divsint.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_divsint.c
+END
+_divuint.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_divuint.c
+END
+idata.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/idata.c
+END
+_divslong.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_divslong.c
+END
+_divulong.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_divulong.c
+END
+fs2sint.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fs2sint.c
+END
+_mulchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_mulchar.c
+END
+fs2uint.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fs2uint.c
+END
+slong2fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/slong2fs.c
+END
+fseq.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fseq.c
+END
+_modschar.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_modschar.c
+END
+ulong2fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/8441/trunk/sdcc/device/lib/pic14/libsdcc/ulong2fs.c
+END
+_moduchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_moduchar.c
+END
+fsgt.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fsgt.c
+END
+_mulint.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_mulint.c
+END
+fsdiv.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fsdiv.c
+END
+fs2schar.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fs2schar.c
+END
+fsneq.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fsneq.c
+END
+_mullong.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_mullong.c
+END
+fs2uchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fs2uchar.c
+END
+fsadd.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fsadd.c
+END
+_modslong.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_modslong.c
+END
+fssub.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fssub.c
+END
+_modulong.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_modulong.c
+END
+fsmul.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fsmul.c
+END
+sint2fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/sint2fs.c
+END
+uint2fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/uint2fs.c
+END
+fs2slong.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fs2slong.c
+END
+fs2ulong.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fs2ulong.c
+END
+_divschar.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_divschar.c
+END
+_divuchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/_divuchar.c
+END
+fslt.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/fslt.c
+END
+schar2fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic14/libsdcc/schar2fs.c
+END

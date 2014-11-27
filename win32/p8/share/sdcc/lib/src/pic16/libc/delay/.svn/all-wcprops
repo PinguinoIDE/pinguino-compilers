@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/delay
+END
+delay100ktcy.S
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/delay/delay100ktcy.S
+END
+delay10ktcy.S
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/delay/delay10ktcy.S
+END
+delay1ktcy.S
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/delay/delay1ktcy.S
+END
+delay1mtcy.S
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/delay/delay1mtcy.S
+END
+delay100tcy.S
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/delay/delay100tcy.S
+END
+delay10tcy.S
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/sdcc/code/!svn/ver/7442/trunk/sdcc/device/lib/pic16/libc/delay/delay10tcy.S
+END
