@@ -1,6 +1,0 @@
-author  : rblanchot@gmail.com
-script  : build-sdcc-v3.sh
-host    : Linux (3.10-2-amd64)
-build   : 21-01-14
-version : 
-          
