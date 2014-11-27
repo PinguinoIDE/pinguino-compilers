@@ -1,0 +1,39 @@
+// File: 16f630_g.lkr
+// Generic linker script for the PIC16F630 processor
+//// Begin: Added in gputils
+//=========================================================================
+//
+//      Gputils Specific Revision History
+//
+//=========================================================================
+//
+//      01 Aug 2014  Changed the gpr0 onto gprnobank.
+//
+//// End: Added in gputils
+
+LIBPATH .
+
+CODEPAGE   NAME=page       START=0x0               END=0x3FE                    
+CODEPAGE   NAME=oscval     START=0x3FF             END=0x3FF          PROTECTED 
+CODEPAGE   NAME=.idlocs    START=0x2000            END=0x2003         PROTECTED 
+CODEPAGE   NAME=.device_id START=0x2006            END=0x2006         PROTECTED 
+CODEPAGE   NAME=.config    START=0x2007            END=0x2007         PROTECTED 
+CODEPAGE   NAME=eedata     START=0x2100            END=0x217F         PROTECTED 
+
+DATABANK   NAME=sfr0       START=0x0               END=0x1F           PROTECTED
+DATABANK   NAME=sfr1       START=0x80              END=0x9F           PROTECTED
+
+
+//// Begin: Changed in gputils
+////SHAREBANK  NAME=gpr0       START=0x20            END=0x5F           
+////SHAREBANK  NAME=gpr0       START=0xA0            END=0xDF           PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x20            END=0x5F           
+SHAREBANK  NAME=gprnobank  START=0xA0            END=0xDF           PROTECTED
+//// End: Changed in gputils
+
+SECTION    NAME=PROG       ROM=page            // ROM code space
+SECTION    NAME=OSCVAL     ROM=oscval          // Oscillator value
+SECTION    NAME=IDLOCS     ROM=.idlocs         // ID locations
+SECTION    NAME=DEVICEID   ROM=.device_id      // Device ID
+SECTION    NAME=DEEPROM    ROM=eedata          // Data EEPROM
+

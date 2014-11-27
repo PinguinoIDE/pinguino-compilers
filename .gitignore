@@ -1,0 +1,21 @@
+# Subversion
+.subversion/
+.svn/
+.config/
+.local/
+
+# Build process
+build/
+log/
+package/
+stamps/
+archives/
+sources/
+linux/
+macosx/
+win32/
+
+# Script
+#build-sdcc-deb-package.sh
+#build-gcc-deb-package.sh
+

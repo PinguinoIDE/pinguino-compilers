@@ -1,0 +1,46 @@
+// File: 16f74_g.lkr
+// Generic linker script for the PIC16F74 processor
+//// Begin: Added in gputils
+//=========================================================================
+//
+//      Gputils Specific Revision History
+//
+//=========================================================================
+//
+//      14 Sep 2012  Changed the "sfr2" and "sfr3" sections.
+//      31 Jul 2014  Changed the "gpr0" and "gpr1" sections.
+//
+//// End: Added in gputils
+
+LIBPATH .
+
+CODEPAGE   NAME=page0      START=0x0               END=0x7FF                    
+CODEPAGE   NAME=page1      START=0x800             END=0xFFF                    
+CODEPAGE   NAME=.idlocs    START=0x2000            END=0x2003         PROTECTED 
+CODEPAGE   NAME=devid      START=0x2006            END=0x2006         PROTECTED 
+CODEPAGE   NAME=.config    START=0x2007            END=0x2007         PROTECTED 
+
+DATABANK   NAME=sfr0       START=0x0               END=0x1F           PROTECTED
+DATABANK   NAME=sfr1       START=0x80              END=0x9F           PROTECTED
+//// Begin: Changed in gputils
+////DATABANK   NAME=sfr2       START=0x100             END=0x11F          PROTECTED
+////DATABANK   NAME=sfr3       START=0x180             END=0x19F          PROTECTED
+DATABANK   NAME=sfr2       START=0x100             END=0x10F          PROTECTED
+DATABANK   NAME=sfr3       START=0x180             END=0x18F          PROTECTED
+//// End: Changed in gputils
+
+
+SHAREBANK  NAME=gpr0       START=0x20            END=0x7F           
+//// Begin: Changed in gputils
+////SHAREBANK  NAME=gpr0       START=0x120           END=0x17F          PROTECTED
+////SHAREBANK  NAME=gpr1       START=0xA0            END=0xFF           
+////SHAREBANK  NAME=gpr1       START=0x1A0           END=0x1FF          PROTECTED
+SHAREBANK  NAME=gpr1       START=0xA0            END=0xFF           
+SHAREBANK  NAME=gprnobnk   START=0x120           END=0x17F          PROTECTED
+SHAREBANK  NAME=gprnobnk   START=0x1A0           END=0x1FF          PROTECTED
+//// End: Changed in gputils
+
+SECTION    NAME=PROG1      ROM=page0           // ROM code space - page0
+SECTION    NAME=PROG2      ROM=page1           // ROM code space - page1
+SECTION    NAME=IDLOCS     ROM=.idlocs         // ID locations
+

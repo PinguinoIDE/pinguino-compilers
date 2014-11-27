@@ -1,0 +1,7 @@
+[user]
+	name = Regis
+	email = regis@pinguino.cc
+[push]
+	default = simple
+[pack]
+	windowMemory = 256m
