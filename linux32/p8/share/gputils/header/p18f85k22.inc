@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC18F85K22 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -1902,7 +1902,6 @@ CCP8IP           EQU  H'0005'
 TMR4IE           EQU  H'0000'
 TMR5IE           EQU  H'0001'
 TMR6IE           EQU  H'0002'
-TMR7IE           EQU  H'0003'
 TMR8IE           EQU  H'0004'
 
 
@@ -1910,7 +1909,6 @@ TMR8IE           EQU  H'0004'
 TMR4IF           EQU  H'0000'
 TMR5IF           EQU  H'0001'
 TMR6IF           EQU  H'0002'
-TMR7IF           EQU  H'0003'
 TMR8IF           EQU  H'0004'
 
 

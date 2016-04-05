@@ -15,7 +15,7 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
 
-   You should have received a copy of the GNU General Public License 
+   You should have received a copy of the GNU General Public License
    along with this library; see the file COPYING. If not, write to the
    Free Software Foundation, 51 Franklin Street, Fifth Floor, Boston,
    MA 02110-1301, USA.
@@ -48,25 +48,45 @@ extern int toupper (int c);
 /* Provide inline versions for the most used functions for efficiency */
 #if __STDC_VERSION__ >= 199901L
 
-extern int isblank (int c);
+inline int isblank (int c)
+{
+  return ((unsigned char)c == ' ' || (unsigned char)c == '\t');
+}
+
+#ifdef EOF
+_Static_assert(!((unsigned char)EOF == ' ' || (unsigned char)EOF == '\t'), "EOF out of range - ");
+#endif
 
 inline int isdigit (int c)
 {
-  return (c >= '0' && c <= '9');
+  return ((unsigned char)c >= '0' && (unsigned char)c <= '9');
 }
+
+#ifdef EOF
+_Static_assert(!((unsigned char)EOF >= '0' && (unsigned char)EOF <= '9'), "EOF out of range - ");
+#endif
 
 inline int islower (int c)
 {
-  return (c >= 'a' && c <= 'z');
+  return ((unsigned char)c >= 'a' && (unsigned char)c <= 'z');
 }
+
+#ifdef EOF
+_Static_assert(!((unsigned char)EOF >= 'a' && (unsigned char)EOF <= 'z'), "EOF out of range - ");
+#endif
 
 inline int isupper (int c)
 {
-  return (c >= 'A' && c <= 'Z');
+  return ((unsigned char)c >= 'A' && (unsigned char)c <= 'Z');
 }
+
+#ifdef EOF
+_Static_assert(!((unsigned char)EOF >= 'A' && (unsigned char)EOF <= 'Z'), "EOF out of range - ");
+#endif
 
 #else
 
+extern int isblank (int c);
 extern int isdigit (int c);
 extern int islower (int c);
 extern int isupper (int c);

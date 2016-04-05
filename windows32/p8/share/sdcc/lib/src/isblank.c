@@ -1,5 +1,5 @@
 /*-------------------------------------------------------------------------
-   isalnum.c
+   isblank.c
 
    Philipp Klaus Krause, philipp@informatik.uni-frankfurt.de 2013
 
@@ -28,10 +28,13 @@
    might be covered by the GNU General Public License.
 -------------------------------------------------------------------------*/
 
-#include <ctype.h>
+/* it is important to declare this function extern before including
+   the inline definition to give it external linkage */
+extern int isblank (int c);
 
-int isblank (int c)
-{
-  return (c == ' ' || c == '\t');
-}
+/* also include stdio.h before ctype.h here so ctype can perform a
+   _Static_assert on EOF */
+#include <stdio.h>
+
+#include <ctype.h>
 

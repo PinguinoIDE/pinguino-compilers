@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC18F14K22 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -225,7 +225,7 @@ C2R              EQU  H'0002'
 C2SP             EQU  H'0003'
 C2POL            EQU  H'0004'
 C2OE             EQU  H'0005'
-C2OUT_CM2CON0    EQU  H'0006'
+C2OUT            EQU  H'0006'
 C2ON             EQU  H'0007'
 
 C2CH0            EQU  H'0000'
@@ -248,7 +248,7 @@ C1R              EQU  H'0002'
 C1SP             EQU  H'0003'
 C1POL            EQU  H'0004'
 C1OE             EQU  H'0005'
-C1OUT_CM1CON0    EQU  H'0006'
+C1OUT            EQU  H'0006'
 C1ON             EQU  H'0007'
 
 C1CH0            EQU  H'0000'
@@ -353,7 +353,6 @@ T13CKI           EQU  H'0005'
 
 CVREF            EQU  H'0000'
 C12IN0M          EQU  H'0001'
-C1OUT_PORTA      EQU  H'0002'
 NOT_MCLR         EQU  H'0003'
 OSC2             EQU  H'0004'
 OSC1             EQU  H'0005'
@@ -411,6 +410,7 @@ AN4              EQU  H'0000'
 AN5              EQU  H'0001'
 AN6              EQU  H'0002'
 AN7              EQU  H'0003'
+SRNQ             EQU  H'0004'
 AN8              EQU  H'0006'
 AN9              EQU  H'0007'
 
@@ -429,7 +429,6 @@ SDO              EQU  H'0007'
 
 C2INP            EQU  H'0000'
 PGM              EQU  H'0003'
-C2OUT_PORTC      EQU  H'0004'
 CCP1             EQU  H'0005'
 NOT_SS           EQU  H'0006'
 
@@ -1015,6 +1014,8 @@ GIE              EQU  H'0007'
 
 GIEL             EQU  H'0006'
 GIEH             EQU  H'0007'
+
+PIE              EQU  H'0006'
 
 
 ;----- STKPTR Bits -----------------------------------------------------

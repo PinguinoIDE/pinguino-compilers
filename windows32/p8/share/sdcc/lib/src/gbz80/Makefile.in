@@ -43,7 +43,7 @@ Z80SOURCES = $(addprefix ../,$(Z80_FLOAT) $(Z80_INT) $(Z80_LONG) $(Z80_LONGLONG)
 Z8OBJECTS = $(patsubst %.c,%.rel,$(Z80_FLOAT) $(Z80_INT) $(Z80_LONG) $(Z80_LONGLONG) $(Z80_SDCC))
 
 OBJ = div.rel mul.rel \
-      putchar.rel crt0_rle.rel heap.rel crtcall.rel
+      putchar.rel crt0_rle.rel heap.rel __sdcc_call_hl.rel
 
 LIB = gbz80.lib
 CC = $(SCC)
@@ -63,10 +63,10 @@ ifeq ($(LIB_TYPE), SDCCLIB)
 	$(top_builddir)/bin/sdcclib -a $@ $(OBJ) $(Z8OBJECTS)
 else
   ifeq ($(LIB_TYPE), AR)
-	$(top_builddir)/bin/sdar -rcS $@ $(OBJ) $(Z8OBJECTS)
+	$(top_builddir)/bin/sdar -rcSD $@ $(OBJ) $(Z8OBJECTS)
   else
     ifeq ($(LIB_TYPE), RANLIB)
-	$(top_builddir)/bin/sdar -rc $@ $(OBJ) $(Z8OBJECTS)
+	$(top_builddir)/bin/sdar -rcD $@ $(OBJ) $(Z8OBJECTS)
     else
 	rm -f $@; \
 	for i in $(basename $(OBJ) $(Z8OBJECTS)); do echo $$i >>$@; done

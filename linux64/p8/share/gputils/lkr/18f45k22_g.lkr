@@ -1,6 +1,6 @@
 // File: 18f45k22_g.lkr
 // Generic linker script for the PIC18F45K22 processor
-// Build date : Aug 07 2014
+// Build date : Oct 21 2015
 
 LIBPATH .
 

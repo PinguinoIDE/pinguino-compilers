@@ -1,6 +1,6 @@
 // File: 18c601_g.lkr
 // Generic linker script for the PIC18C601 processor
-// Build date : Aug 07 2014
+// Build date : Aug 13 2015
 //// Begin: Added in gputils
 //=========================================================================
 //

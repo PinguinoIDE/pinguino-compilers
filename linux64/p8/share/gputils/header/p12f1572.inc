@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC12F1572 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -579,9 +579,7 @@ CFGS             EQU  H'0006'
 
 
 ;----- VREGCON Bits -----------------------------------------------------
-VREGPM0          EQU  H'0000'
-VREGPM1          EQU  H'0001'
-
+VREGPM           EQU  H'0001'
 
 
 ;----- RCSTA Bits -----------------------------------------------------

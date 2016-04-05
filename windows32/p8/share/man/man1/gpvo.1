@@ -1,4 +1,4 @@
-.TH GPVO 1 "2012-03-04" "gputils-1.4.0" "Linux user's manual"
+.TH GPVO 1 "2016-02-28" "gputils-1.4.3" "Linux user's manual"
 .SH NAME
 gpvo \- GNU PIC object file viewer
 .SH SYNOPSIS
@@ -27,7 +27,7 @@ Decode special mnemonics.
 .BR \-f ", "\-\-file
 Display file header.
 .TP
-.BR \-h ", "\-\-help
+.BR \-h ", " \-\-help
 Show the usage message and exit.
 .TP
 .BR \-n ", "\-\-no\-names
@@ -35,6 +35,10 @@ Suppress filenames.
 .TP
 .BR \-s ", "\-\-section
 Display sections.
+.TP
+.BR \-\-strict-options
+If this is set, then an option may not be parameter of an another option.
+For example: -x --symbol
 .TP
 .BR \-t ", "\-\-symbol
 Display symbol table.

@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC16F1707 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -207,12 +207,18 @@ RA1PPS           EQU  H'0E91'
 RA2PPS           EQU  H'0E92'
 RA4PPS           EQU  H'0E94'
 RA5PPS           EQU  H'0E95'
+RB4PPS           EQU  H'0E9C'
+RB5PPS           EQU  H'0E9D'
+RB6PPS           EQU  H'0E9E'
+RB7PPS           EQU  H'0E9F'
 RC0PPS           EQU  H'0EA0'
 RC1PPS           EQU  H'0EA1'
 RC2PPS           EQU  H'0EA2'
 RC3PPS           EQU  H'0EA3'
 RC4PPS           EQU  H'0EA4'
 RC5PPS           EQU  H'0EA5'
+RC6PPS           EQU  H'0EA6'
+RC7PPS           EQU  H'0EA7'
 
 ;-----Bank31------------------
 ICDBK0H          EQU  H'0F9E'
@@ -1165,8 +1171,8 @@ Z_SHAD           EQU  H'0002'
        __BADRAM  H'0E23'-H'0E6F'
        __BADRAM  H'0E8C'-H'0E8F'
        __BADRAM  H'0E93'
-       __BADRAM  H'0E96'-H'0E9F'
-       __BADRAM  H'0EA6'-H'0EEF'
+       __BADRAM  H'0E96'-H'0E9B'
+       __BADRAM  H'0EA8'-H'0EEF'
        __BADRAM  H'0F0C'-H'0F6F'
        __BADRAM  H'0F8E'-H'0F90'
        __BADRAM  H'0F93'-H'0F94'

@@ -1,6 +1,6 @@
 // File: 18lf14k50_g.lkr
 // Generic linker script for the PIC18LF14K50 processor
-// Build date : Aug 07 2014
+// Build date : Oct 21 2015
 
 LIBPATH .
 

@@ -28,6 +28,6 @@ SHAREBANK  NAME=gprnobnk   START=0x1F0           END=0x1FF          PROTECTED
 SECTION    NAME=PROG0      ROM=page0           // ROM code space - page0
 SECTION    NAME=PROG1      ROM=page1           // ROM code space - page1
 SECTION    NAME=IDLOCS     ROM=.idlocs         // ID locations
-SECTION    NAME=CALIBR     ROM=.calib          // Calibration bits location
+SECTION    NAME=CALIB      ROM=.calib          // Calibration value location
 SECTION    NAME=DEEPROM    ROM=eedata          // Data EEPROM
 

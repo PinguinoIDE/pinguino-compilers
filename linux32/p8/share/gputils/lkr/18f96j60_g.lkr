@@ -1,6 +1,6 @@
 // File: 18f96j60_g.lkr
 // Generic linker script for the PIC18F96J60 processor
-// Build date : Aug 07 2014
+// Build date : Oct 21 2015
 
 LIBPATH .
 

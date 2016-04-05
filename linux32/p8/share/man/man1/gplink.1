@@ -1,4 +1,4 @@
-.TH GPLINK 1 "2013-05-10" "gputils-1.4.0" "Linux user's manual"
+.TH GPLINK 1 "2016-02-28" "gputils-1.4.3" "Linux user's manual"
 .SH NAME
 gplink \- GNU PIC linker
 .SH SYNOPSIS
@@ -34,7 +34,7 @@ Fill unused unprotected program memory with value.  The value supercedes the
 linker script fill value.  The value must not be greater than 0xffff.  The
 value is hex.  The value may be preceeded by "0x".
 .TP
-.BR \-h ", "\-\-help
+.BR \-h ", " \-\-help
 Show the usage message and exit.
 .TP
 .BR "\-I DIR" , " \-\-include DIR
@@ -67,6 +67,10 @@ Linker script.
 .TP
 .BR "\-t SIZE" , " \-\-stack SIZE
 Create a stack section.
+.TP
+.BR \-\-strict-options
+If this is set, then an option may not be parameter of an another option.
+For example: -s --quiet
 .TP
 .BR "\-u" , " \-\-macro symbol=[value]
 Add macro value for script.

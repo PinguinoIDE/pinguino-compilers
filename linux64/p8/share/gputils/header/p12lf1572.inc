@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC12LF1572 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -126,7 +126,6 @@ PMDATL           EQU  H'0193'
 PMDATH           EQU  H'0194'
 PMCON1           EQU  H'0195'
 PMCON2           EQU  H'0196'
-VREGCON          EQU  H'0197'
 RCREG            EQU  H'0199'
 TXREG            EQU  H'019A'
 SPBRG            EQU  H'019B'
@@ -576,12 +575,6 @@ WRERR            EQU  H'0003'
 FREE             EQU  H'0004'
 LWLO             EQU  H'0005'
 CFGS             EQU  H'0006'
-
-
-;----- VREGCON Bits -----------------------------------------------------
-VREGPM0          EQU  H'0000'
-VREGPM1          EQU  H'0001'
-
 
 
 ;----- RCSTA Bits -----------------------------------------------------
@@ -1475,6 +1468,7 @@ Z_SHAD           EQU  H'0002'
        __BADRAM  H'011A'-H'011C'
        __BADRAM  H'011E'-H'011F'
        __BADRAM  H'018D'-H'0190'
+       __BADRAM  H'0197'
        __BADRAM  H'0198'
        __BADRAM  H'01A0'-H'01EF'
        __BADRAM  H'020D'-H'021F'

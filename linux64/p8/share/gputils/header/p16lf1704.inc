@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC16LF1704 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -569,6 +569,9 @@ ADFM             EQU  H'0007'
 
 ADPREF0          EQU  H'0000'
 ADPREF1          EQU  H'0001'
+ADCS0            EQU  H'0004'
+ADCS1            EQU  H'0005'
+ADCS2            EQU  H'0006'
 
 
 ;----- ADCON2 Bits -----------------------------------------------------

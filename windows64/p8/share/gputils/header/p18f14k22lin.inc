@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC18F14K22LIN processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -387,6 +387,15 @@ RB5              EQU  H'0005'
 RB6              EQU  H'0006'
 RB7              EQU  H'0007'
 
+SDI              EQU  H'0004'
+SCK              EQU  H'0006'
+
+SDA              EQU  H'0004'
+; DT is a reserved word
+; DT               EQU  H'0005'
+SCL              EQU  H'0006'
+CK               EQU  H'0007'
+
 
 ;----- PORTC Bits -----------------------------------------------------
 RC0              EQU  H'0000'
@@ -395,7 +404,7 @@ RC2              EQU  H'0002'
 RC3              EQU  H'0003'
 RC4              EQU  H'0004'
 RC5              EQU  H'0005'
-PWRGD            EQU  H'0007'
+NOT_LINRESET     EQU  H'0007'
 
 AN4              EQU  H'0000'
 AN5              EQU  H'0001'
@@ -409,6 +418,7 @@ C12IN1M          EQU  H'0001'
 C12IN2M          EQU  H'0002'
 C12IN3M          EQU  H'0003'
 C12OUT           EQU  H'0004'
+LINRESET         EQU  H'0007'
 
 P1D              EQU  H'0002'
 P1C              EQU  H'0003'
@@ -1004,6 +1014,8 @@ GIE              EQU  H'0007'
 
 GIEL             EQU  H'0006'
 GIEH             EQU  H'0007'
+
+PIE              EQU  H'0006'
 
 
 ;----- STKPTR Bits -----------------------------------------------------

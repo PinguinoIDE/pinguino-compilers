@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC16F1507 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -512,7 +512,6 @@ WRERR            EQU  H'0003'
 FREE             EQU  H'0004'
 LWLO             EQU  H'0005'
 CFGS             EQU  H'0006'
-EEPGD            EQU  H'0007'
 
 
 ;----- VREGCON Bits -----------------------------------------------------

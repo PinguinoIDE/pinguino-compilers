@@ -1,7 +1,6 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
 ;  MPASM PIC12F520 processor include
 ; 
 ;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved

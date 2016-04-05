@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC16F870 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -24,6 +24,16 @@
 ;       3. Processor Type entry in the MPASM full-screen interface
 ;       4. Setting the processor in the MPLAB Project Dialog
 ;==========================================================================
+;;;; Begin: Added in gputils
+
+;==========================================================================
+;
+;       Gputils Specific Revision History
+;
+;==========================================================================
+
+;       02 Aug 2015  Changed "_CP_All" to "_CP_ALL".
+;;;; End: Added in gputils
 
 ;==========================================================================
 ;
@@ -391,7 +401,10 @@ _PWRTE_ON            EQU  H'3FF7'    ; PWRT enabled
 _PWRTE_OFF           EQU  H'3FFF'    ; PWRT disabled
 
 _CP_ON               EQU  H'0FCF'    ; All memory code protected
-_CP_All              EQU  H'0FCF'    ; All memory code protected
+;;;; Begin: Changed in gputils
+;;;;_CP_All              EQU  H'0FCF'    ; All memory code protected
+_CP_ALL              EQU  H'0FCF'    ; All memory code protected
+;;;; End: Changed in gputils
 _CP_OFF              EQU  H'3FFF'    ; Code protection off
 
 _BOREN_OFF           EQU  H'3FBF'    ; BOR disabled

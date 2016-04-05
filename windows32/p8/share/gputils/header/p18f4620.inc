@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC18F4620 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -24,6 +24,16 @@
 ;       3. Processor Type entry in the MPASM full-screen interface
 ;       4. Setting the processor in the MPLAB Project Dialog
 ;==========================================================================
+;;;; Begin: Added in gputils
+
+;==========================================================================
+;
+;       Gputils Specific Revision History
+;
+;==========================================================================
+
+;       14 Sep 2015  Removed RE3 bit from "DDRE Bits" and "TRISE Bits".
+;;;; End: Added in gputils
 
 ;==========================================================================
 ;
@@ -542,7 +552,9 @@ IBF              EQU  H'0007'
 RE0              EQU  H'0000'
 RE1              EQU  H'0001'
 RE2              EQU  H'0002'
-RE3              EQU  H'0003'
+;;;; Begin: Removed in gputils
+;;;;RE3              EQU  H'0003'
+;;;; End: Removed in gputils
 
 
 ;----- TRISE Bits -----------------------------------------------------
@@ -557,7 +569,9 @@ IBF              EQU  H'0007'
 RE0              EQU  H'0000'
 RE1              EQU  H'0001'
 RE2              EQU  H'0002'
-RE3              EQU  H'0003'
+;;;; Begin: Removed in gputils
+;;;;RE3              EQU  H'0003'
+;;;; End: Removed in gputils
 
 
 ;----- OSCTUNE Bits -----------------------------------------------------
@@ -1311,8 +1325,8 @@ _BOREN_NOSLP_2L      EQU  H'FD'    ; Brown-out Reset enabled in hardware only an
 _BOREN_SBORDIS_2L    EQU  H'FF'    ; Brown-out Reset enabled in hardware only (SBOREN is disabled)
 
 _BORV_0_2L           EQU  H'E7'    ; Maximum setting
-_BORV_1_2L           EQU  H'EF'    ; 
-_BORV_2_2L           EQU  H'F7'    ; 
+_BORV_1_2L           EQU  H'EF'
+_BORV_2_2L           EQU  H'F7'
 _BORV_3_2L           EQU  H'FF'    ; Minimum setting
 
 ;----- CONFIG2H Options --------------------------------------------------

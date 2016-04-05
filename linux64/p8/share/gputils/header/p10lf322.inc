@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Dec 08 2015
 ;  MPASM PIC10LF322 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -310,12 +310,13 @@ IOCAF3           EQU  H'0003'
 
 
 ;----- FVRCON Bits -----------------------------------------------------
-ADFVR0           EQU  H'0000'
-ADFVR1           EQU  H'0001'
 TSRNG            EQU  H'0004'
 TSEN             EQU  H'0005'
 FVRRDY           EQU  H'0006'
 FVREN            EQU  H'0007'
+
+ADFVR0           EQU  H'0000'
+ADFVR1           EQU  H'0001'
 
 
 ;----- ADCON Bits -----------------------------------------------------
@@ -651,46 +652,46 @@ SBOREN           EQU  H'0007'
 
 ; The following is an assignment of address values for all of the
 ; configuration registers for the purpose of table reads
-_CONFIG          EQU  H'2007'
+_CONFIG         EQU  H'2007'
 
 ;----- CONFIG Options --------------------------------------------------
-_FOSC_INTOSC         EQU  H'3FFE'    ; INTOSC oscillator: CLKIN function disabled
-_FOSC_EC             EQU  H'3FFF'    ; EC: CLKIN function enabled
+_FOSC_INTOSC         EQU  H'3FFE'; INTOSC oscillator: CLKIN function disabled
+_FOSC_EC             EQU  H'3FFF'; EC: CLKIN function enabled
 
-_BOREN_OFF           EQU  H'3FF9'    ; Brown-out Reset disabled
-_BOREN_SBODEN        EQU  H'3FFB'    ; Brown-out Reset controlled by the SBOREN bit in the BORCON register
-_BOREN_NSLEEP        EQU  H'3FFD'    ; Brown-out Reset enabled while running and disabled in Sleep
-_BOREN_ON            EQU  H'3FFF'    ; Brown-out Reset enabled
+_BOREN_OFF           EQU  H'3FF9'; Brown-out Reset disabled
+_BOREN_SBODEN        EQU  H'3FFB'; Brown-out Reset controlled by the SBOREN bit in the BORCON register
+_BOREN_NSLEEP        EQU  H'3FFD'; Brown-out Reset enabled while running and disabled in Sleep
+_BOREN_ON            EQU  H'3FFF'; Brown-out Reset enabled
 
-_WDTE_OFF            EQU  H'3FE7'    ; WDT disabled
-_WDTE_SWDTEN         EQU  H'3FEF'    ; WDT controlled by the SWDTEN bit in the WDTCON register
-_WDTE_NSLEEP         EQU  H'3FF7'    ; WDT enabled while running and disabled in Sleep
-_WDTE_ON             EQU  H'3FFF'    ; WDT enabled
+_WDTE_OFF            EQU  H'3FE7'; WDT disabled
+_WDTE_SWDTEN         EQU  H'3FEF'; WDT controlled by the SWDTEN bit in the WDTCON register
+_WDTE_NSLEEP         EQU  H'3FF7'; WDT enabled while running and disabled in Sleep
+_WDTE_ON             EQU  H'3FFF'; WDT enabled
 
-_PWRTE_ON            EQU  H'3FDF'    ; PWRT enabled
-_PWRTE_OFF           EQU  H'3FFF'    ; PWRT disabled
+_PWRTE_ON            EQU  H'3FDF'; PWRT enabled
+_PWRTE_OFF           EQU  H'3FFF'; PWRT disabled
 
-_MCLRE_OFF           EQU  H'3FBF'    ; MCLR pin function is digital input, MCLR internally tied to VDD
-_MCLRE_ON            EQU  H'3FFF'    ; MCLR pin function is MCLR
+_MCLRE_OFF           EQU  H'3FBF'; MCLR pin function is digital input, MCLR internally tied to VDD
+_MCLRE_ON            EQU  H'3FFF'; MCLR pin function is MCLR
 
-_CP_ON               EQU  H'3F7F'    ; Program memory code protection is enabled
-_CP_OFF              EQU  H'3FFF'    ; Program memory code protection is disabled
+_CP_ON               EQU  H'3F7F'; Program memory code protection is enabled
+_CP_OFF              EQU  H'3FFF'; Program memory code protection is disabled
 
-_LVP_OFF             EQU  H'3EFF'    ; High-voltage on MCLR/VPP must be used for programming
-_LVP_ON              EQU  H'3FFF'    ; Low-voltage programming enabled
+_LVP_OFF             EQU  H'3EFF'; High-voltage on MCLR/VPP must be used for programming
+_LVP_ON              EQU  H'3FFF'; Low-voltage programming enabled
 
-_LPBOR_OFF           EQU  H'3DFF'    ; BOR disabled
-_LPBOR_ON            EQU  H'3FFF'    ; BOR enabled
+_LPBOR_OFF           EQU  H'3DFF'; BOR disabled
+_LPBOR_ON            EQU  H'3FFF'; BOR enabled
 
-_BORV_HI             EQU  H'3BFF'    ; Brown-out Reset Voltage (Vbor), high trip point selected.
-_BORV_27             EQU  H'3BFF'    ; Brown-out Reset Voltage (Vbor), high trip point selected.
-_BORV_LO             EQU  H'3FFF'    ; Brown-out Reset Voltage (Vbor), low trip point selected.
-_BORV_19             EQU  H'3FFF'    ; Brown-out Reset Voltage (Vbor), low trip point selected.
+_BORV_HI             EQU  H'3BFF'; Brown-out Reset Voltage (Vbor), high trip point selected.
+_BORV_27             EQU  H'3BFF'; Brown-out Reset Voltage (Vbor), high trip point selected.
+_BORV_LO             EQU  H'3FFF'; Brown-out Reset Voltage (Vbor), low trip point selected.
+_BORV_19             EQU  H'3FFF'; Brown-out Reset Voltage (Vbor), low trip point selected.
 
-_WRT_ALL             EQU  H'27FF'    ; 000h to 1FFh write protected, no addresses may be modified by PMCON control
-_WRT_HALF            EQU  H'2FFF'    ; 000h to 0FFh write protected, 100h to 1FFh may be modified by PMCON control
-_WRT_BOOT            EQU  H'37FF'    ; 000h to 07Fh write protected, 080h to 1FFh may be modified by PMCON control
-_WRT_OFF             EQU  H'3FFF'    ; Write protection off
+_WRT_ALL             EQU  H'27FF'; 000h to 1FFh write protected, no addresses may be modified by PMCON control
+_WRT_HALF            EQU  H'2FFF'; 000h to 0FFh write protected, 100h to 1FFh may be modified by PMCON control
+_WRT_BOOT            EQU  H'37FF'; 000h to 07Fh write protected, 080h to 1FFh may be modified by PMCON control
+_WRT_OFF             EQU  H'3FFF'; Write protection off
 
 ;----- DEVID Equates --------------------------------------------------
 _DEVID1          EQU  H'2006'

@@ -1,4 +1,4 @@
-.TH GPASM 1 "2014-05-01" "gputils-1.4.0" "Linux user's manual"
+.TH GPASM 1 "2016-02-28" "gputils-1.4.3" "Linux user's manual"
 .SH NAME
 gpasm \- GNU PIC assembler
 .SH SYNOPSIS
@@ -75,8 +75,8 @@ option, shows only the specified device.
 .BR \-k ", " \-\-error
 Enables creation of the error file.
 .TP
-.BR \-l[12[ce]|14[ce]|16[ce]] ", " \-\-list-chips[=([12[ce]|14[ce]|16[ce]])]
-List supported processors based on various aspects.
+.BR \-l[12[ce]|14[cef]|16[ce]] ", " \-\-list-chips[=([12[ce]|14[cef]|16[ce]])]
+List supported processors based on various aspects. (f => x)
 .TP
 .BR \-L ", "\-\-force-list
 Ignore NOLIST directives.  This forces gpasm to print every line assembled in
@@ -124,10 +124,12 @@ Suppress anything sent to standard output.
 .BR "\-r RADIX", " \-\-radix RADIX"
 The supported radices are BIN, DEC, OCT, and HEX. The default is HEX.
 .TP
-.BR "\-s[12[ce]|14[ce]|16[ce]]", " \-\-list\-processor\-properties[=([12[ce]|14[ce]|16[ce]])]"
+.BR "\-s[12[ce]|14[cef]|16[ce]]",
+.BR "\-\-list\-processor\-properties[=([12[ce]|14[cef]|16[ce]])]"
+
 Lists properties of the processors. Using by itself, displays the all
 devices or group of the devices. Along with the '-p' option, shows
-only the specified device.
+only the specified device. (f => x)
 .TP
 .BR "\-S [0|1|2]", " \-\-strict [0|1|2]"
 Set the strict level of the recommended instruction-parameters
@@ -145,6 +147,10 @@ Help to the extension of the pic14devices.txt file in the sdcc project.
 Using by itself, displays the all '14' and '14e' devices. Along with
 the '-p' option, shows only the specified device.
 .TP
+.BR \-\-strict-options
+If this is set, then an option may not be parameter of an another option.
+For example: -I -c
+.TP
 .BR \-u ", "\-\-absolute
 Use absolute paths.
 .TP
@@ -159,6 +165,9 @@ This option sets the message level.
 1: Will suppress the messages.
 .ti +4
 2: Will suppress the messages and warnings.
+.TP
+.BR \-X ", "\-\-macro\-dereference
+Use the source from where the macro was invoked for errors.
 .TP
 .BR \-y ", "\-\-extended
 Enable 18xx extended mode.

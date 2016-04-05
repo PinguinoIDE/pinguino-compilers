@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC16LF1509 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -657,7 +657,6 @@ WRERR            EQU  H'0003'
 FREE             EQU  H'0004'
 LWLO             EQU  H'0005'
 CFGS             EQU  H'0006'
-EEPGD            EQU  H'0007'
 
 
 ;----- RCSTA Bits -----------------------------------------------------

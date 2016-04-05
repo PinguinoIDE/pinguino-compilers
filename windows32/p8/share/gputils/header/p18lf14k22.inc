@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC18LF14K22 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -1015,6 +1015,8 @@ GIE              EQU  H'0007'
 
 GIEL             EQU  H'0006'
 GIEH             EQU  H'0007'
+
+PIE              EQU  H'0006'
 
 
 ;----- STKPTR Bits -----------------------------------------------------

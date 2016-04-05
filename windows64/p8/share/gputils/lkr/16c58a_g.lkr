@@ -23,7 +23,7 @@ CODEPAGE     NAME=page1      START=0x200             END=0x3FF
 CODEPAGE     NAME=page2      START=0x400             END=0x5FF
 //// End: Added in gputils
 //// Begin: Changed in gputils
-////  CODEPAGE   NAME=page       START=0x0               END=0x7FF                    
+////CODEPAGE   NAME=page       START=0x0               END=0x7FF                    
 CODEPAGE   NAME=page3      START=0x600             END=0x7FF
 //// End: Changed in gputils
 CODEPAGE   NAME=.idlocs    START=0x800             END=0x803          PROTECTED 
@@ -37,12 +37,12 @@ SHAREBANK  NAME=sfr0       START=0x60              END=0x66           PROTECTED
 DATABANK   NAME=gpr0       START=0x10              END=0x1F           
 DATABANK   NAME=gpr1       START=0x30              END=0x3F           
 DATABANK   NAME=gpr2       START=0x50              END=0x5F           
-  DATABANK   NAME=gpr3       START=0x70              END=0x7F           
+DATABANK   NAME=gpr3       START=0x70              END=0x7F           
 
-  SHAREBANK  NAME=gprnobnk   START=0x7             END=0xF            
-  SHAREBANK  NAME=gprnobnk   START=0x27            END=0x2F           PROTECTED
-  SHAREBANK  NAME=gprnobnk   START=0x47            END=0x4F           PROTECTED
-  SHAREBANK  NAME=gprnobnk   START=0x67            END=0x6F           PROTECTED
+SHAREBANK  NAME=gprnobnk   START=0x7             END=0xF            
+SHAREBANK  NAME=gprnobnk   START=0x27            END=0x2F           PROTECTED
+SHAREBANK  NAME=gprnobnk   START=0x47            END=0x4F           PROTECTED
+SHAREBANK  NAME=gprnobnk   START=0x67            END=0x6F           PROTECTED
 
 //// Begin: Changed in gputils
 ////SECTION    NAME=PROG       ROM=page            // ROM code space

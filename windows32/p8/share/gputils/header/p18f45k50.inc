@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC18F45K50 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -875,6 +875,7 @@ RA3              EQU  H'0003'
 RA4              EQU  H'0004'
 RA5              EQU  H'0005'
 RA6              EQU  H'0006'
+RA7              EQU  H'0007'
 
 
 ;----- TRISA Bits -----------------------------------------------------
@@ -894,6 +895,7 @@ RA3              EQU  H'0003'
 RA4              EQU  H'0004'
 RA5              EQU  H'0005'
 RA6              EQU  H'0006'
+RA7              EQU  H'0007'
 
 
 ;----- DDRB Bits -----------------------------------------------------

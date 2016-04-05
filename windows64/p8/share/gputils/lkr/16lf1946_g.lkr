@@ -6,7 +6,7 @@ LIBPATH .
 CODEPAGE   NAME=page0      START=0x0               END=0x7FF                    
 CODEPAGE   NAME=page1      START=0x800             END=0xFFF                    
 CODEPAGE   NAME=page2      START=0x1000            END=0x17FF                   
-  CODEPAGE   NAME=page3      START=0x1800            END=0x1FFF                   
+CODEPAGE   NAME=page3      START=0x1800            END=0x1FFF                   
 CODEPAGE   NAME=.idlocs    START=0x8000            END=0x8003         PROTECTED 
 CODEPAGE   NAME=.devid     START=0x8006            END=0x8006         PROTECTED 
 CODEPAGE   NAME=.config    START=0x8007            END=0x8008         PROTECTED 
@@ -53,40 +53,40 @@ DATABANK   NAME=gpr2       START=0x120             END=0x16F          SHADOW=lin
 DATABANK   NAME=gpr3       START=0x1A0             END=0x1EF          SHADOW=linear0:0x20F0
 DATABANK   NAME=gpr4       START=0x220             END=0x26F          SHADOW=linear0:0x2140
 DATABANK   NAME=gpr5       START=0x2A0             END=0x2EF          SHADOW=linear0:0x2190
-  DATABANK   NAME=gpr6       START=0x320             END=0x32F          SHADOW=linear0:0x21E0
+DATABANK   NAME=gpr6       START=0x320             END=0x32F          SHADOW=linear0:0x21E0
 
-  SHAREBANK  NAME=gprnobank  START=0x70            END=0x7F           
-  SHAREBANK  NAME=gprnobank  START=0xF0            END=0xFF           PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x170           END=0x17F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x1F0           END=0x1FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x270           END=0x27F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x2F0           END=0x2FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x370           END=0x37F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x3F0           END=0x3FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x470           END=0x47F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x4F0           END=0x4FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x570           END=0x57F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x5F0           END=0x5FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x670           END=0x67F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x6F0           END=0x6FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x770           END=0x77F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x7F0           END=0x7FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x870           END=0x87F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x8F0           END=0x8FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x970           END=0x97F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0x9F0           END=0x9FF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xA70           END=0xA7F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xAF0           END=0xAFF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xB70           END=0xB7F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xBF0           END=0xBFF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xC70           END=0xC7F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xCF0           END=0xCFF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xD70           END=0xD7F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xDF0           END=0xDFF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xE70           END=0xE7F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xEF0           END=0xEFF          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xF70           END=0xF7F          PROTECTED
-  SHAREBANK  NAME=gprnobank  START=0xFF0           END=0xFFF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x70            END=0x7F           
+SHAREBANK  NAME=gprnobank  START=0xF0            END=0xFF           PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x170           END=0x17F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x1F0           END=0x1FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x270           END=0x27F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x2F0           END=0x2FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x370           END=0x37F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x3F0           END=0x3FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x470           END=0x47F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x4F0           END=0x4FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x570           END=0x57F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x5F0           END=0x5FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x670           END=0x67F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x6F0           END=0x6FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x770           END=0x77F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x7F0           END=0x7FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x870           END=0x87F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x8F0           END=0x8FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x970           END=0x97F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0x9F0           END=0x9FF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xA70           END=0xA7F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xAF0           END=0xAFF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xB70           END=0xB7F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xBF0           END=0xBFF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xC70           END=0xC7F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xCF0           END=0xCFF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xD70           END=0xD7F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xDF0           END=0xDFF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xE70           END=0xE7F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xEF0           END=0xEFF          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xF70           END=0xF7F          PROTECTED
+SHAREBANK  NAME=gprnobank  START=0xFF0           END=0xFFF          PROTECTED
 
 SECTION    NAME=PROG0      ROM=page0           // ROM code space - page0
 SECTION    NAME=PROG1      ROM=page1           // ROM code space - page1

@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC18LF65K80 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -5302,19 +5302,19 @@ STKOVF           EQU  H'0007'
 ;     CPD = ON             Enabled
 ;     CPD = OFF            Disabled
 ;
-;   Table Write Protect 00800-03FFF:
+;   Table Write Protect 00800-01FFF:
 ;     WRT0 = ON            Enabled
 ;     WRT0 = OFF           Disabled
 ;
-;   Table Write Protect 04000-07FFF:
+;   Table Write Protect 02000-03FFF:
 ;     WRT1 = ON            Enabled
 ;     WRT1 = OFF           Disabled
 ;
-;   Table Write Protect 08000-0BFFF:
+;   Table Write Protect 04000-05FFF:
 ;     WRT2 = ON            Enabled
 ;     WRT2 = OFF           Disabled
 ;
-;   Table Write Protect 0C000-0FFFF:
+;   Table Write Protect 06000-07FFF:
 ;     WRT3 = ON            Enabled
 ;     WRT3 = OFF           Disabled
 ;
@@ -5330,19 +5330,19 @@ STKOVF           EQU  H'0007'
 ;     WRTD = ON            Enabled
 ;     WRTD = OFF           Disabled
 ;
-;   Table Read Protect 00800-03FFF:
+;   Table Read Protect 00800-01FFF:
 ;     EBTR0 = ON           Enabled
 ;     EBTR0 = OFF          Disabled
 ;
-;   Table Read Protect 04000-07FFF:
+;   Table Read Protect 02000-03FFF:
 ;     EBTR1 = ON           Enabled
 ;     EBTR1 = OFF          Disabled
 ;
-;   Table Read Protect 08000-0BFFF:
+;   Table Read Protect 04000-05FFF:
 ;     EBTR2 = ON           Enabled
 ;     EBTR2 = OFF          Disabled
 ;
-;   Table Read Protect 0C000-0FFFF:
+;   Table Read Protect 06000-07FFF:
 ;     EBTR3 = ON           Enabled
 ;     EBTR3 = OFF          Disabled
 ;

@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC12LF1612 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -138,10 +138,12 @@ WPUA             EQU  H'020C'
 
 ;-----Bank5------------------
 ODCONA           EQU  H'028C'
+CCPR1            EQU  H'0291'
 CCPR1L           EQU  H'0291'
 CCPR1H           EQU  H'0292'
 CCP1CON          EQU  H'0293'
 CCP1CAP          EQU  H'0294'
+CCPR2            EQU  H'0298'
 CCPR2L           EQU  H'0298'
 CCPR2H           EQU  H'0299'
 CCP2CON          EQU  H'029A'
@@ -265,15 +267,6 @@ SMT2SIG          EQU  H'0DAE'
 SMT2WIN          EQU  H'0DAF'
 
 ;-----Bank31------------------
-ICDIO            EQU  H'0F8C'
-ICDCON0          EQU  H'0F8D'
-ICDSTAT          EQU  H'0F91'
-ICDINSTL         EQU  H'0F96'
-ICDINSTH         EQU  H'0F97'
-ICDBK0CON        EQU  H'0F9C'
-ICDBK0L          EQU  H'0F9D'
-ICDBK0H          EQU  H'0F9E'
-BSRICDSHAD       EQU  H'0FE3'
 STATUS_SHAD      EQU  H'0FE4'
 WREG_SHAD        EQU  H'0FE5'
 BSR_SHAD         EQU  H'0FE6'
@@ -690,28 +683,6 @@ ODA4             EQU  H'0004'
 ODA5             EQU  H'0005'
 
 
-;----- CCPR1L Bits -----------------------------------------------------
-CCPR0            EQU  H'0000'
-CCPR1            EQU  H'0001'
-CCPR2            EQU  H'0002'
-CCPR3            EQU  H'0003'
-CCPR4            EQU  H'0004'
-CCPR5            EQU  H'0005'
-CCPR6            EQU  H'0006'
-CCPR7            EQU  H'0007'
-
-
-;----- CCPR1H Bits -----------------------------------------------------
-CCPR8            EQU  H'0000'
-CCPR9            EQU  H'0001'
-CCPR10           EQU  H'0002'
-CCPR11           EQU  H'0003'
-CCPR12           EQU  H'0004'
-CCPR13           EQU  H'0005'
-CCPR14           EQU  H'0006'
-CCPR15           EQU  H'0007'
-
-
 ;----- CCP1CON Bits -----------------------------------------------------
 FMT              EQU  H'0004'
 OUT              EQU  H'0005'
@@ -741,28 +712,6 @@ CTS1             EQU  H'0001'
 
 CCP1CTS0         EQU  H'0000'
 CCP1CTS1         EQU  H'0001'
-
-
-;----- CCPR2L Bits -----------------------------------------------------
-CCPR0            EQU  H'0000'
-CCPR1            EQU  H'0001'
-CCPR2            EQU  H'0002'
-CCPR3            EQU  H'0003'
-CCPR4            EQU  H'0004'
-CCPR5            EQU  H'0005'
-CCPR6            EQU  H'0006'
-CCPR7            EQU  H'0007'
-
-
-;----- CCPR2H Bits -----------------------------------------------------
-CCPR8            EQU  H'0000'
-CCPR9            EQU  H'0001'
-CCPR10           EQU  H'0002'
-CCPR11           EQU  H'0003'
-CCPR12           EQU  H'0004'
-CCPR13           EQU  H'0005'
-CCPR14           EQU  H'0006'
-CCPR15           EQU  H'0007'
 
 
 ;----- CCP2CON Bits -----------------------------------------------------
@@ -1939,76 +1888,6 @@ SMT2WSEL6        EQU  H'0006'
 SMT2WSEL7        EQU  H'0007'
 
 
-;----- ICDIO Bits -----------------------------------------------------
-ICD_SLRC         EQU  H'0000'
-TRIS_ICDCLK      EQU  H'0002'
-TRIS_ICDDAT      EQU  H'0003'
-LAT_ICDCLK       EQU  H'0004'
-LAT_ICDDAT       EQU  H'0005'
-PORT_ICDCLK      EQU  H'0006'
-PORT_ICDDAT      EQU  H'0007'
-
-
-;----- ICDCON0 Bits -----------------------------------------------------
-RSTVEC           EQU  H'0000'
-DBGINEX          EQU  H'0003'
-SSTEP            EQU  H'0005'
-FREEZ            EQU  H'0006'
-INBUG            EQU  H'0007'
-
-
-;----- ICDSTAT Bits -----------------------------------------------------
-USRHLTF          EQU  H'0001'
-TRP0HLTF         EQU  H'0006'
-TRP1HLTF         EQU  H'0007'
-
-
-;----- ICDINSTL Bits -----------------------------------------------------
-DBGIN0           EQU  H'0000'
-DBGIN1           EQU  H'0001'
-DBGIN2           EQU  H'0002'
-DBGIN3           EQU  H'0003'
-DBGIN4           EQU  H'0004'
-DBGIN5           EQU  H'0005'
-DBGIN6           EQU  H'0006'
-DBGIN7           EQU  H'0007'
-
-
-;----- ICDINSTH Bits -----------------------------------------------------
-DBGIN8           EQU  H'0000'
-DBGIN9           EQU  H'0001'
-DBGIN10          EQU  H'0002'
-DBGIN11          EQU  H'0003'
-DBGIN12          EQU  H'0004'
-DBGIN13          EQU  H'0005'
-
-
-;----- ICDBK0CON Bits -----------------------------------------------------
-BKHLT            EQU  H'0000'
-BKEN             EQU  H'0007'
-
-
-;----- ICDBK0L Bits -----------------------------------------------------
-BKA0             EQU  H'0000'
-BKA1             EQU  H'0001'
-BKA2             EQU  H'0002'
-BKA3             EQU  H'0003'
-BKA4             EQU  H'0004'
-BKA5             EQU  H'0005'
-BKA6             EQU  H'0006'
-BKA7             EQU  H'0007'
-
-
-;----- ICDBK0H Bits -----------------------------------------------------
-BKA8             EQU  H'0000'
-BKA9             EQU  H'0001'
-BKA10            EQU  H'0002'
-BKA11            EQU  H'0003'
-BKA12            EQU  H'0004'
-BKA13            EQU  H'0005'
-BKA14            EQU  H'0006'
-
-
 ;----- STATUS_SHAD Bits -----------------------------------------------------
 C_SHAD           EQU  H'0000'
 DC_SHAD          EQU  H'0001'
@@ -2118,13 +1997,7 @@ Z_SHAD           EQU  H'0002'
        __BADRAM  H'0EA0'-H'0EEF'
        __BADRAM  H'0F0C'-H'0F0E'
        __BADRAM  H'0F0F'-H'0F6F'
-       __BADRAM  H'0F8E'-H'0F90'
-       __BADRAM  H'0F92'-H'0F95'
-       __BADRAM  H'0F98'-H'0F9B'
-       __BADRAM  H'0F9F'
-       __BADRAM  H'0FA0'-H'0FBF'
-       __BADRAM  H'0FC0'-H'0FCF'
-       __BADRAM  H'0FD0'-H'0FE2'
+       __BADRAM  H'0F8C'-H'0FE3'
        __BADRAM  H'0FEC'
 
 ;==========================================================================
@@ -2232,8 +2105,8 @@ _WDTCWS_WDTCWS75 EQU  H'3DFF'    ; 75 percent window open time
 _WDTCWS_WDTCWS100 EQU  H'3EFF'    ; 100 percent window open time (Legacy WDT) 
 _WDTCWS_WDTCWSSW EQU  H'3FFF'    ; Software WDT window size control (WDTWS bits)
 
-_WDTCCS_LFINTOSC EQU  H'7FF'    ; 31.0 kHz LFINTOSC
-_WDTCCS_MFINTOSC EQU  H'FFF'    ; 31.0 kHz LFINTOSC
+_WDTCCS_LFINTOSC EQU  H'07FF'    ; 31.0 kHz LFINTOSC
+_WDTCCS_MFINTOSC EQU  H'0FFF'    ; 31.0 kHz LFINTOSC
 _WDTCCS_SWC      EQU  H'3FFF'    ; Software control, controlled by WDTCS bits
 
 ;----- DEVID Equates --------------------------------------------------

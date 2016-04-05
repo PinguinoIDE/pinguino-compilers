@@ -3,25 +3,11 @@
 
 LIBPATH .
 
-CODEPAGE   NAME=page0      START=0x0               END=0x7FF                    
-CODEPAGE   NAME=page1      START=0x800             END=0xFFF                    
-CODEPAGE   NAME=page2      START=0x1000            END=0x17FF                   
-CODEPAGE   NAME=page3      START=0x1800            END=0x1FFF                   
-CODEPAGE   NAME=page4      START=0x2000            END=0x27FF                   
-CODEPAGE   NAME=page5      START=0x2800            END=0x2FFF                   
-CODEPAGE   NAME=page6      START=0x3000            END=0x37FF                   
-CODEPAGE   NAME=page7      START=0x3800            END=0x3FFF                   
-CODEPAGE   NAME=page8      START=0x4000            END=0x47FF                   
-CODEPAGE   NAME=page9      START=0x4800            END=0x4FFF                   
-CODEPAGE   NAME=page10     START=0x5000            END=0x57FF                   
-CODEPAGE   NAME=page11     START=0x5800            END=0x5FFF                   
-CODEPAGE   NAME=page12     START=0x6000            END=0x67FF                   
-CODEPAGE   NAME=page13     START=0x6800            END=0x6FFF                   
-CODEPAGE   NAME=page14     START=0x7000            END=0x77FF                   
-CODEPAGE   NAME=page15     START=0x7800            END=0x7FFF                   
+CODEPAGE   NAME=page0      START=0x0               END=0x1FFF                   
 CODEPAGE   NAME=.idlocs    START=0x8000            END=0x8003         PROTECTED 
 CODEPAGE   NAME=.devid     START=0x8006            END=0x8006         PROTECTED 
 CODEPAGE   NAME=.config    START=0x8007            END=0x800B         PROTECTED 
+CODEPAGE   NAME=eedata     START=0xF000            END=0xF0FF         PROTECTED 
 
 LINEARMEM  NAME=linear0    START=0x2000            END=0x23EF         PROTECTED
 
@@ -106,9 +92,7 @@ SHAREBANK  NAME=gprnobank  START=0xF70           END=0xF7F          PROTECTED
 SHAREBANK  NAME=gprnobank  START=0xFF0           END=0xFFF          PROTECTED
 
 SECTION    NAME=PROG0      ROM=page0           // ROM code space - page0
-SECTION    NAME=PROG1      ROM=page1           // ROM code space - page1
-SECTION    NAME=PROG2      ROM=page2           // ROM code space - page2
-SECTION    NAME=PROG3      ROM=page3           // ROM code space - page3
 SECTION    NAME=IDLOCS     ROM=.idlocs         // ID locations
+SECTION    NAME=DEEPROM    ROM=eedata          // Data EEPROM
 SECTION    NAME=LINEAR0    RAM=linear0         // Linear Memory
 

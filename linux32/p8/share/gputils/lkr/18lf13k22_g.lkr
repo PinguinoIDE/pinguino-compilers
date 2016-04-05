@@ -1,6 +1,6 @@
 // File: 18lf13k22_g.lkr
 // Generic linker script for the PIC18LF13K22 processor
-// Build date : Aug 07 2014
+// Build date : Oct 21 2015
 
 LIBPATH .
 

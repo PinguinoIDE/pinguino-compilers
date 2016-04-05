@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC16HV753 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -353,11 +353,12 @@ IRCF1            EQU  H'0005'
 
 ;----- FVR1CON0 Bits -----------------------------------------------------
 FVRBUFEN         EQU  H'0000'
-FVRBUFSS0        EQU  H'0003'
-FVRBUFSS1        EQU  H'0004'
 FVROE            EQU  H'0005'
 FVRRDY           EQU  H'0006'
 FVREN            EQU  H'0007'
+
+FVRBUSS0         EQU  H'0003'
+FVRBUSS1         EQU  H'0004'
 
 
 ;----- DAC1CON0 Bits -----------------------------------------------------

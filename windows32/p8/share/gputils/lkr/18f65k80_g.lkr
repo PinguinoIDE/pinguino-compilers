@@ -1,6 +1,6 @@
 // File: 18f65k80_g.lkr
 // Generic linker script for the PIC18F65K80 processor
-// Build date : Aug 07 2014
+// Build date : Oct 21 2015
 
 LIBPATH .
 

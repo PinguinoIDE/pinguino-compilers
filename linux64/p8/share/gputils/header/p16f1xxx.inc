@@ -4,6 +4,19 @@
 ;
 ; This file is has been generated using device-manager.pl.
 ;
+;    To the usage of the PIC16F1503 MCU an example:
+;
+;	1. Command line switch:
+;	    gpasm -p pic16f1503 source.asm
+;
+;	2. The LIST directive in the source file:
+;	    list p=16f1503
+;		(It does not matter that lowercase or uppercase.)
+;
+;	3. The PROCESSOR directive in the source file:
+;	    processor 16f1503
+;		(It does not matter that lowercase or uppercase.)
+;
 ;----------------------------------------------------------------------
 
 ifdef __16F1xxx
@@ -102,6 +115,18 @@ endif
 ifdef __16F1527
   include <p16f1527.inc>
 endif
+ifdef __16F1574
+  include <p16f1574.inc>
+endif
+ifdef __16F1575
+  include <p16f1575.inc>
+endif
+ifdef __16F1578
+  include <p16f1578.inc>
+endif
+ifdef __16F1579
+  include <p16f1579.inc>
+endif
 ifdef __16F1613
   include <p16f1613.inc>
 endif
@@ -162,6 +187,21 @@ endif
 ifdef __16F1769
   include <p16f1769.inc>
 endif
+ifdef __16F1773
+  include <p16f1773.inc>
+endif
+ifdef __16F1776
+  include <p16f1776.inc>
+endif
+ifdef __16F1777
+  include <p16f1777.inc>
+endif
+ifdef __16F1778
+  include <p16f1778.inc>
+endif
+ifdef __16F1779
+  include <p16f1779.inc>
+endif
 ifdef __16F1782
   include <p16f1782.inc>
 endif
@@ -210,21 +250,6 @@ endif
 ifdef __16F1847
   include <p16f1847.inc>
 endif
-ifdef __16F1902
-  include <p16f1902.inc>
-endif
-ifdef __16F1903
-  include <p16f1903.inc>
-endif
-ifdef __16F1904
-  include <p16f1904.inc>
-endif
-ifdef __16F1906
-  include <p16f1906.inc>
-endif
-ifdef __16F1907
-  include <p16f1907.inc>
-endif
 ifdef __16F1933
   include <p16f1933.inc>
 endif
@@ -249,11 +274,53 @@ endif
 ifdef __16F1947
   include <p16f1947.inc>
 endif
+ifdef __16F18313
+  include <p16f18313.inc>
+endif
+ifdef __16F18323
+  include <p16f18323.inc>
+endif
+ifdef __16F18324
+  include <p16f18324.inc>
+endif
+ifdef __16F18325
+  include <p16f18325.inc>
+endif
+ifdef __16F18326
+  include <p16f18326.inc>
+endif
+ifdef __16F18344
+  include <p16f18344.inc>
+endif
+ifdef __16F18345
+  include <p16f18345.inc>
+endif
+ifdef __16F18346
+  include <p16f18346.inc>
+endif
+ifdef __16F18854
+  include <p16f18854.inc>
+endif
 ifdef __16F18855
   include <p16f18855.inc>
 endif
+ifdef __16F18856
+  include <p16f18856.inc>
+endif
+ifdef __16F18857
+  include <p16f18857.inc>
+endif
 ifdef __16F18875
   include <p16f18875.inc>
+endif
+ifdef __16F18876
+  include <p16f18876.inc>
+endif
+ifdef __16F18877
+  include <p16f18877.inc>
+endif
+ifdef __16F19197
+  include <p16f19197.inc>
 endif
 ifdef __16LF1454
   include <p16lf1454.inc>
@@ -308,6 +375,24 @@ ifdef __16LF1554
 endif
 ifdef __16LF1559
   include <p16lf1559.inc>
+endif
+ifdef __16LF1566
+  include <p16lf1566.inc>
+endif
+ifdef __16LF1567
+  include <p16lf1567.inc>
+endif
+ifdef __16LF1574
+  include <p16lf1574.inc>
+endif
+ifdef __16LF1575
+  include <p16lf1575.inc>
+endif
+ifdef __16LF1578
+  include <p16lf1578.inc>
+endif
+ifdef __16LF1579
+  include <p16lf1579.inc>
 endif
 ifdef __16LF1613
   include <p16lf1613.inc>
@@ -368,6 +453,21 @@ ifdef __16LF1768
 endif
 ifdef __16LF1769
   include <p16lf1769.inc>
+endif
+ifdef __16LF1773
+  include <p16lf1773.inc>
+endif
+ifdef __16LF1776
+  include <p16lf1776.inc>
+endif
+ifdef __16LF1777
+  include <p16lf1777.inc>
+endif
+ifdef __16LF1778
+  include <p16lf1778.inc>
+endif
+ifdef __16LF1779
+  include <p16lf1779.inc>
 endif
 ifdef __16LF1782
   include <p16lf1782.inc>
@@ -456,9 +556,48 @@ endif
 ifdef __16LF1947
   include <p16lf1947.inc>
 endif
+ifdef __16LF18313
+  include <p16lf18313.inc>
+endif
+ifdef __16LF18323
+  include <p16lf18323.inc>
+endif
+ifdef __16LF18324
+  include <p16lf18324.inc>
+endif
+ifdef __16LF18325
+  include <p16lf18325.inc>
+endif
+ifdef __16LF18326
+  include <p16lf18326.inc>
+endif
+ifdef __16LF18344
+  include <p16lf18344.inc>
+endif
+ifdef __16LF18345
+  include <p16lf18345.inc>
+endif
+ifdef __16LF18346
+  include <p16lf18346.inc>
+endif
+ifdef __16LF18854
+  include <p16lf18854.inc>
+endif
 ifdef __16LF18855
   include <p16lf18855.inc>
 endif
+ifdef __16LF18856
+  include <p16lf18856.inc>
+endif
+ifdef __16LF18857
+  include <p16lf18857.inc>
+endif
 ifdef __16LF18875
   include <p16lf18875.inc>
+endif
+ifdef __16LF18876
+  include <p16lf18876.inc>
+endif
+ifdef __16LF18877
+  include <p16lf18877.inc>
 endif

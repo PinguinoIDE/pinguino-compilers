@@ -13,7 +13,7 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
    GNU General Public License for more details.
 
-   You should have received a copy of the GNU General Public License 
+   You should have received a copy of the GNU General Public License
    along with this library; see the file COPYING. If not, write to the
    Free Software Foundation, 51 Franklin Street, Fifth Floor, Boston,
    MA 02110-1301, USA.
@@ -85,7 +85,7 @@ extern char *gets(char *);
 extern char getchar(void);
 extern void putchar(char);
 
-#if defined(SDCC_mcs51) && !defined(SDCC_USE_XSTACK)
+#if defined(__SDCC_mcs51) && !defined(__SDCC_USE_XSTACK)
 extern void printf_fast(__code const char *fmt, ...) _REENTRANT;
 extern void printf_fast_f(__code const char *fmt, ...) _REENTRANT;
 extern void printf_tiny(__code const char *fmt, ...) _REENTRANT;

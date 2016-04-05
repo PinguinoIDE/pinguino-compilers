@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Oct 14 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC16LF1717 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -2891,13 +2891,7 @@ Z_SHAD           EQU  H'0002'
        __BADRAM  H'0EB3'-H'0EEF'
        __BADRAM  H'0F0C'-H'0F0E'
        __BADRAM  H'0F38'-H'0F6F'
-       __BADRAM  H'0F8E'-H'0F90'
-       __BADRAM  H'0F92'-H'0F95'
-       __BADRAM  H'0F98'-H'0F9B'
-       __BADRAM  H'0F9F'
-       __BADRAM  H'0FA0'-H'0FBF'
-       __BADRAM  H'0FC0'-H'0FCF'
-       __BADRAM  H'0FD0'-H'0FE2'
+       __BADRAM  H'0F8C'-H'0FE3'
        __BADRAM  H'0FEC'
 
 ;==========================================================================

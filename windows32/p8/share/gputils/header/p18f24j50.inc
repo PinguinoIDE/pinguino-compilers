@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Aug 13 2015
 ;  MPASM PIC18F24J50 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -163,6 +163,7 @@ SSP2CON2         EQU  H'0F71'
 SSP2CON1         EQU  H'0F72'
 SSP2STAT         EQU  H'0F73'
 SSP2ADD          EQU  H'0F74'
+SSP2MSK          EQU  H'0F74'
 SSP2BUF          EQU  H'0F75'
 T4CON            EQU  H'0F76'
 PR4              EQU  H'0F77'
@@ -259,6 +260,7 @@ SSPCON1          EQU  H'0FC6'
 SSP1STAT         EQU  H'0FC7'
 SSPSTAT          EQU  H'0FC7'
 SSP1ADD          EQU  H'0FC8'
+SSP1MSK          EQU  H'0FC8'
 SSPADD           EQU  H'0FC8'
 SSP1BUF          EQU  H'0FC9'
 SSPBUF           EQU  H'0FC9'
@@ -727,6 +729,17 @@ MSK6             EQU  H'0006'
 MSK7             EQU  H'0007'
 
 
+;----- SSP2MSK Bits -----------------------------------------------------
+MSK0             EQU  H'0000'
+MSK1             EQU  H'0001'
+MSK2             EQU  H'0002'
+MSK3             EQU  H'0003'
+MSK4             EQU  H'0004'
+MSK5             EQU  H'0005'
+MSK6             EQU  H'0006'
+MSK7             EQU  H'0007'
+
+
 ;----- T4CON Bits -----------------------------------------------------
 TMR4ON           EQU  H'0002'
 
@@ -742,6 +755,7 @@ T4OUTPS3         EQU  H'0006'
 TMR3ON           EQU  H'0000'
 RD16             EQU  H'0001'
 T3SYNC           EQU  H'0002'
+T3OSCEN          EQU  H'0003'
 
 T3CKPS0          EQU  H'0004'
 T3CKPS1          EQU  H'0005'
@@ -1351,12 +1365,13 @@ ITRIM5           EQU  H'0007'
 ;----- CTMUCONL Bits -----------------------------------------------------
 EDG1STAT         EQU  H'0000'
 EDG2STAT         EQU  H'0001'
+EDG1POL          EQU  H'0004'
+EDG2POL          EQU  H'0007'
+
 EDG1SEL0         EQU  H'0002'
 EDG1SEL1         EQU  H'0003'
-EDG1POL          EQU  H'0004'
 EDG2SEL0         EQU  H'0005'
 EDG2SEL1         EQU  H'0006'
-EDG2POL          EQU  H'0007'
 
 
 ;----- CTMUCONH Bits -----------------------------------------------------
@@ -1765,6 +1780,26 @@ I2C_DAT1         EQU  H'0005'
 
 
 ;----- SSP1ADD Bits -----------------------------------------------------
+MSK0             EQU  H'0000'
+MSK1             EQU  H'0001'
+MSK2             EQU  H'0002'
+MSK3             EQU  H'0003'
+MSK4             EQU  H'0004'
+MSK5             EQU  H'0005'
+MSK6             EQU  H'0006'
+MSK7             EQU  H'0007'
+
+MSK01            EQU  H'0000'
+MSK11            EQU  H'0001'
+MSK21            EQU  H'0002'
+MSK31            EQU  H'0003'
+MSK41            EQU  H'0004'
+MSK51            EQU  H'0005'
+MSK61            EQU  H'0006'
+MSK71            EQU  H'0007'
+
+
+;----- SSP1MSK Bits -----------------------------------------------------
 MSK0             EQU  H'0000'
 MSK1             EQU  H'0001'
 MSK2             EQU  H'0002'

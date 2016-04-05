@@ -1,10 +1,10 @@
         LIST
 
 ;==========================================================================
-; Build date : Aug 07 2014
+; Build date : Oct 21 2015
 ;  MPASM PIC18F24K22 processor include
 ; 
-;  (c) Copyright 1999-2014 Microchip Technology, All rights reserved
+;  (c) Copyright 1999-2015 Microchip Technology, All rights reserved
 ;==========================================================================
 
         NOLIST
@@ -733,15 +733,14 @@ P2DC6            EQU  H'0006'
 
 
 ;----- CCP2CON Bits -----------------------------------------------------
-P2M0             EQU  H'0006'
-P2M1             EQU  H'0007'
-
 CCP2M0           EQU  H'0000'
 CCP2M1           EQU  H'0001'
 CCP2M2           EQU  H'0002'
 CCP2M3           EQU  H'0003'
 DC2B0            EQU  H'0004'
 DC2B1            EQU  H'0005'
+P2M0             EQU  H'0006'
+P2M1             EQU  H'0007'
 
 
 ;----- SSP2CON3 Bits -----------------------------------------------------
